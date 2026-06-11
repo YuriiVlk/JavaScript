@@ -1,39 +1,26 @@
-/*let a = 5;
-let b = 6.5;
+/*const money = 10;
+const canBuy = money > 50;
 
- console.log(typeof a);
- console.log(typeof b);
+if(canBuy) {
+	console.log('Can buy our product');
+} else if(money > 5) {
+    console.log('Buy mini product');
+}  else {
+	console.log('No balance');
+}
 
- a = 'string';
- console.log(typeof a);
-let isAdmin = false;
-console.log(typeof isAdmin);
-let c;
-console.log(typeof c);
-let d = null;
-console.log(typeof (d == null));
+console.log('Sum');
 */
-const payRateUsd = 80;
-const projectHours = 40;
-const availableHours = (11 - 2) * 5;
-console.log('Can I work?  ' + (availableHours > projectHours));
-console.log('Cost of work: ' + payRateUsd * projectHours + ' $');
-const tamplate = `Can I work? ${availableHours > projectHours}`;
-console.log(tamplate);
 
-const age = '18';
-console.log(Number(age) + 5);
-console.log(age - 3);
-const userName = 'User';
-console.log(Number(userName) + 5);
-console.log(typeof NaN);
-console.log(String(2) + 5);
-console.log(Boolean(1));
-console.log(Boolean(0));
-console.log(Boolean(-1));
-console.log(Boolean(''));
-console.log(Boolean('123'));
-console.log(Boolean(null));
-console.log(Boolean(Number('string')));
-console.log(Boolean(NaN));
+const sumDeposit = 12000;
+const costOfHouse = 13500;
+const rate = 0.07;
+const sumProcent = sumDeposit * (1 + rate / 12) ** 24;
+console.log(sumProcent);
+
+if (sumProcent > costOfHouse) {
+	console.log(`Can buy house. Balance of funds: ${sumProcent - costOfHouse}`)
+} else {
+	console.log('Can not buy');
+}
 
