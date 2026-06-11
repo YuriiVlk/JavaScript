@@ -1,26 +1,11 @@
-/*const money = 10;
-const canBuy = money > 50;
+const secretNumber = '7';
 
-if(canBuy) {
-	console.log('Can buy our product');
-} else if(money > 5) {
-    console.log('Buy mini product');
-}  else {
-	console.log('No balance');
+if(Number(secretNumber) === 7) {
+	console.log('Вгадав strong');
 }
 
-console.log('Sum');
-*/
+const q = Number(prompt('Enter sum'));
 
-const sumDeposit = 12000;
-const costOfHouse = 13500;
-const rate = 0.07;
-const sumProcent = sumDeposit * (1 + rate / 12) ** 24;
-console.log(sumProcent);
-
-if (sumProcent > costOfHouse) {
-	console.log(`Can buy house. Balance of funds: ${sumProcent - costOfHouse}`)
-} else {
-	console.log('Can not buy');
+if (q === 7) {
+	console.log('Right');
 }
-
